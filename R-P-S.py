@@ -5,13 +5,13 @@ import random
 user_choice = input("What is Your Choice ?[R] for Rock , [P] for Paper , [S] for scissors: \n")
 pc_choice = random.choice(["R", "P", "S"])
 
-
+# Defining the win situation
 def is_win():
     if user_choice == "R" and pc_choice == "S" or user_choice == "P" and pc_choice == "R" or user_choice == "S" and \
             pc_choice == "S":
         return True
 
-
+# Actual Game
 def rpc():
     if user_choice == pc_choice:
         print("Play Again , it was a tie")
