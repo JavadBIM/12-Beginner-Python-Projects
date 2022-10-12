@@ -18,10 +18,10 @@ def rpc():
     if user_choice == pc_choice:
         print("Play Again , it was a tie")
     # r>s p>r s>p
-    if is_win():
+    elif is_win():
         print("You Just Won")
-
-    print("You Lose !")
+    else:
+        print("You Lose !")
 
 
 print(pc_choice)
